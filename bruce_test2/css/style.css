@@ -24,16 +24,21 @@ a:hover { color: #D40000; text-decoration: none}
 * { margin: 0; padding: 0; }
 html, body { width: 100%; height: 100%; overflow: hidden; }
 .container { width: 100%; height: 100%; position: absolute; left: 0; top: 0%; }
-.container .page { height: 100%; position: relative; color:#fff;text-align:center; }
+.container .page { height: 100%; position: relative; color:#fff;text-align:center;background:url('../images/bg.jpg')no-repeat;background-size: 100% 100% }
 .container .page img{
     width:100%;
 }
+@media screen and (min-width: 700px){
+    .container .page img{
+        width:40%;
+    }
+}
 .container .page h1{padding-top:120px; line-height:50px; display:block}
-.container .page0 { background-color: blue; }
+/* .container .page0 { background:url('../images/bg.jpg')no-repeat;background-size: 100% 100%}
 .container .page1 { background-color:#93F; }
 .container .page2 { background-color:#F90; }
 .container .page3 { background-color: green; }
-.container .page4 { background-color: tomato; }
+.container .page4 { background-color: tomato; } */
 .container .page1 img.no1 { position: absolute; left: 10px; top: 50px; -webkit-transition: all 1s ease 0s; }
 .container .page1.cur img.no1 { -webkit-transform: rotate(720deg); }
 .container .page1 img.no2 { position: absolute; left: 600px; top: 50px; -webkit-transition: all 1s ease 2s; }
