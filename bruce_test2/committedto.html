@@ -6,8 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"
-        id="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
 
     <title>爱的纪念</title>
 
@@ -18,10 +17,9 @@
     <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
     <script type="text/javascript">
-
         $(document).ready(
 
-            function () {
+            function() {
 
                 var nowpage = 0;
 
@@ -31,7 +29,7 @@
 
                     {
 
-                        swipe: function (event, direction, distance, duration, fingerCount) {
+                        swipe: function(event, direction, distance, duration, fingerCount) {
 
                             if (direction == "up") {
 
@@ -61,7 +59,9 @@
 
 
 
-                            $(".container").animate({ "top": nowpage * -100 + "%" }, 400);
+                            $(".container").animate({
+                                "top": nowpage * -100 + "%"
+                            }, 400);
 
 
 
@@ -76,7 +76,6 @@
             }
 
         );
-
     </script>
 
 </head>
@@ -87,66 +86,6 @@
 
     <!--效果html开始-->
 
-    <div class="container">
-
-        <div class="page page0 cur">
-
-            <img src="./images/alu.jpg" alt="">
-
-        </div>
-
-        <div class="page page1">
-
-            <img src="./images/alu1.jpg" alt="">
-
-        </div>
-
-        <div class="page page2">
-
-            <img src="./images/alu2.jpg" alt="">
-
-        </div>
-
-        <div class="page page3">
-
-            <img src="./images/alu3.jpg" alt="">
-
-        </div>
-
-        <div class="page page4">
-
-            <img src="./images/ours.jpg" alt="">
-
-        </div>
-        <div class="page page5">
-
-            <img src="./images/ours2.jpg" alt="">
-
-        </div>
-        <div class="page page6">
-
-            <img src="./images/ours2.jpg" alt="">
-
-        </div>
-        <div class="page page7">
-
-            <img src="./images/ours3.jpg" alt="">
-
-        </div>
-        <div class="page page8">
-
-            <img src="./images/fang.jpg" alt="">
-
-        </div>
-        <div class="page page9">
-
-            <img src="./images/fang2.jpg" alt="">
-            <div style='z-index: 99;position: relative;margin-bottom: 40px;text-align: center;color: #000;font-size: 18px;'> THE END  </div>
-        </div>
-        <audio controls="controls" loop id='audio' style='position: fixed;z-index: 999;bottom: 0;left: 0;width:100%;opacity: 0.6'>
-            <source  src="./css/song.ogg" loop autoplay type="audio/ogg">
-        </audio>
-    </div>
 
     <!--效果html结束-->
 
@@ -154,7 +93,7 @@
 
 </body>
 <script>
-    document.addEventListener('touchstart', function () {
+    document.addEventListener('touchstart', function() {
         function audioAutoPlay() {
             var audio = document.getElementById('audio');
             audio.play();
